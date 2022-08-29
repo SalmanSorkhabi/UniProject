@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Shop Project Uni</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">خانه</string>
+    <string name="category">دسته بندی</string>
+    <string name="basket">سبد خرید</string>
+    <string name="profile">پروفایل</string>
+    <string name="search_at">جستجو در ...</string>
+    <string name="time">%d : %d : %d</string>
+
+    <string name="colors">زنگ ها</string>
+    <string name="sizes">سایز ها</string>
+    <string name="seller">فروشنده</string>
+    <string name="product_features">ویزگی های محصول</string>
+    <string name="processor_type">نوع پردازنده :</string>
+    <string name="main_camera">دوربین اصلی :</string>
+    <string name="selfie_camera">دوربین سلفی :</string>
+    <string name="technical_specifications">مشخصات فنی</string>
+    <string name="chart_price">نمودار قیمت</string>
+    <string name="compare">مقایسه محصول</string>
+    <string name="add_product">افزودن کالا</string>
+    <string name="camera">دوربین</string>
+    <string name="comment">نظرات</string>
+</resources>

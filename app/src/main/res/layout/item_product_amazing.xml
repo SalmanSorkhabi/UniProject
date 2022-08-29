@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_130sdp"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:background="?selectableItemBackgroundBorderless"
+    android:layout_marginStart="@dimen/_4sdp"
+    android:layout_marginEnd="@dimen/_4sdp"
+    app:cardCornerRadius="@dimen/_8sdp"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_8sdp">
+
+        <com.example.shopprojectuni.Utils.services.view.MyImageView
+            android:id="@+id/img_product_amazing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:viewAspectRatio="1.0"/>
+
+        <TextView
+            android:id="@+id/txt_title_product_amazing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/_4sdp"
+            android:lines="2"
+            android:textColor="@color/gray_700"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:textSize="@dimen/_8sdp"
+            tools:text="گوشی موبایل سامسونگ گلکسی " />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_off_price_product_amazing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/green_500"
+                android:textSize="@dimen/_10sdp"
+                tools:text="15,500" />
+
+            <TextView
+                android:id="@+id/txt_price_product_amazing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_off_price_product_amazing"
+                android:layout_alignParentEnd="true"
+                android:textSize="@dimen/_8sdp"
+                tools:text="31,000" />
+
+            <TextView
+                android:id="@+id/txt_off_percent_product_amazing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_off_price"
+                android:textColor="@color/white"
+                tools:text="50%" />
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar_product_amazing"
+            style="@style/CustomProgressBarAmazing"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_count_sell_product_amazing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/gray_700"
+                android:textSize="@dimen/_10sdp"
+                tools:text="21" />
+
+            <TextView
+                android:id="@+id/txt_time_product_amazing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layoutDirection="ltr"
+                android:textColor="@color/gray_700"
+                android:textSize="@dimen/_10sdp"
+                tools:text="6:45:23" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

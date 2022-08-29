@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.shopprojectuni.Utils.services.view.MyImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/img_banners_home"
+    android:layout_width="match_parent"
+    app:roundedCornerRadius="@dimen/_8sdp"
+    android:layout_height="match_parent">
+
+
+</com.example.shopprojectuni.Utils.services.view.MyImageView>

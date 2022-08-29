@@ -1,0 +1,20 @@
+package com.example.shopprojectuni.Utils
+
+const val TYPE_ONE = "1"
+const val TYPE_TWO = "2"
+const val CHART = "chart"
+const val COMPARE = "compare"
+const val PRODUCT_ID_ONE = "id1"
+const val PRODUCT_ID_TWO = "id2"
+const val PRODUCT_ID = "id"
+const val SUBCAT_ID = "subCatId"
+const val BRAND_ID = "brandId"
+const val YES = "yes"
+const val NO = "no"
+const val ADDRESS = "address"
+const val FAMILY = "name"
+const val RESULT_CODE = 1001
+const val WALLET = "wallet"
+const val DIRECT = "direct"
+const val ADDRESS_ID = "id"
+const val REF_ID = "ref_id"

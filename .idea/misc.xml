@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/drawable-v24/ic_favourite_selected.xml" value="0.215" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/drawable-v24/ic_truck.xml" value="0.2285" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/drawable-v24/ic_warranty.xml" value="0.2285" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/drawable-v24/shape_radius_cat.xml" value="0.2285" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/drawable/ic_bag_deselected.xml" value="0.238" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/drawable/progress_amazing.xml" value="0.2155" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/drawable/shape_icon_support.xml" value="0.2155" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/drawable/shape_off_price.xml" value="0.2155" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/drawable/shape_search_relative.xml" value="0.2155" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/layout/activity_history_chart.xml" value="0.340625" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/layout/activity_main.xml" value="0.34010416666666665" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/layout/activity_product_detaile.xml" value="0.22760416666666666" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/layout/fragment_basked.xml" value="0.34010416666666665" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/layout/fragment_category.xml" value="0.34010416666666665" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/layout/fragment_home.xml" value="0.34010416666666665" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/layout/fragment_profile.xml" value="0.34010416666666665" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/layout/item_banners.xml" value="0.34010416666666665" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/layout/item_banners_type.xml" value="0.34010416666666665" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/layout/item_color_product.xml" value="0.340625" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/layout/item_comment.xml" value="0.340625" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/layout/item_first_amazing.xml" value="0.33" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/layout/item_gallery_images.xml" value="0.340625" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/layout/item_general_cat.xml" value="0.34010416666666665" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/layout/item_product_amazing.xml" value="0.75" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/layout/item_product_popular.xml" value="0.34010416666666665" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/layout/item_properties.xml" value="0.340625" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/layout/item_similar.xml" value="0.340625" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/layout/item_size.xml" value="0.340625" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/layout/layout_by_product.xml" value="0.340625" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/layout/layout_garanty.xml" value="0.34010416666666665" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/layout/layout_support.xml" value="0.34010416666666665" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/layout/progress_view.xml" value="0.34010416666666665" />
+        <entry key="..\:/Users/parse/AndroidStudioProjects/ShopProjectUni/app/src/main/res/menu/bottom_nav.xml" value="0.34010416666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinator"
+    android:layoutDirection="rtl"
+    tools:context=".feature.activity.detaile.ProductDetailActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="?colorOnPrimary">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|enterAlways|snap">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_4sdp">
+
+                <ImageView
+                    android:id="@+id/imgDetailsFinish"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/ic_clear_24" />
+
+                <ImageView
+                    android:id="@+id/imgDetailsMore"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerInside"
+                    android:background="?selectableItemBackgroundBorderless"
+                    app:srcCompat="@drawable/ic_more_vert_24" />
+
+                <ImageView
+                    android:id="@+id/imgDetailsFavourite"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:layout_toStartOf="@id/imgDetailsMore"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/ic_favourite_deselected" />
+            </RelativeLayout>
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginBottom="@dimen/_46sdp"
+        android:background="@color/gray_100"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                app:cardCornerRadius="@dimen/_8sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/gallerySlideViewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_180sdp" />
+
+                    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                        android:id="@+id/dotsIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_8sdp"
+                        app:dotsColor="@color/gray_300"
+                        app:dotsCornerRadius="8dp"
+                        app:dotsSize="@dimen/_6sdp"
+                        app:dotsSpacing="@dimen/_1sdp"
+                        app:dotsWidthFactor="2.5"
+                        app:progressMode="false"
+                        app:selectedDotColor="@color/green_500" />
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                app:cardCornerRadius="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_8sdp">
+
+                    <TextView
+                        android:id="@+id/txt_title_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:lineSpacingExtra="@dimen/_3sdp"
+                        android:textColor="@color/gray_900"
+                        android:textSize="@dimen/_12sdp"
+                        tools:text="گوشی موبایل سامسونگ مدل Galaxy A21S SM-A217F/DS دو سیم کارت ظرفیت 64 گیگابایت " />
+
+                    <RatingBar
+                        android:id="@+id/rbDetails"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:isIndicator="true"
+                        android:numStars="5" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:background="@color/gray_300" />
+
+                    <TextView
+                        android:id="@+id/txtTitleColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_marginBottom="@dimen/_12sdp"
+                        android:text="@string/colors"
+                        android:textColor="@color/gray_900"
+                        android:textSize="@dimen/_12sdp"
+                        app:drawableStartCompat="@drawable/ic_vertical_line" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/colorDetailsRv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/_2sdp"
+                        android:paddingEnd="@dimen/_2sdp" />
+
+                    <TextView
+                        android:id="@+id/txtTitleSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_marginBottom="@dimen/_12sdp"
+                        android:text="@string/sizes"
+                        android:textColor="@color/gray_900"
+                        android:textSize="@dimen/_12sdp"
+                        app:drawableStartCompat="@drawable/ic_vertical_line" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/sizeDetailsRv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/_2sdp"
+                        android:paddingEnd="@dimen/_2sdp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                app:cardCornerRadius="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_8sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_marginBottom="@dimen/_12sdp"
+                        android:text="@string/seller"
+                        android:textColor="@color/gray_900"
+                        android:textSize="@dimen/_12sdp"
+                        app:drawableStartCompat="@drawable/ic_vertical_line" />
+
+                    <TextView
+                        android:id="@+id/txt_seller_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/_4sdp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/gray_700"
+                        android:textSize="@dimen/_8sdp"
+                        app:drawableStartCompat="@drawable/ic_truck"
+                        app:drawableTint="@color/gray_700"
+                        tools:text="فروشگاه تک" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:background="@color/gray_300" />
+
+                    <TextView
+                        android:id="@+id/txt_garanty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/_4sdp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/gray_700"
+                        android:textSize="@dimen/_8sdp"
+                        app:drawableStartCompat="@drawable/ic_warranty"
+                        app:drawableTint="@color/gray_700"
+                        tools:text="گارانتی یک ساله سام سرویس" />
+
+                    <TextView
+                        android:id="@+id/txt_number"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:drawablePadding="@dimen/_4sdp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray_700"
+                        android:textSize="@dimen/_8sdp"
+                        app:drawableStartCompat="@drawable/ic_pie_chart"
+                        app:drawableTint="@color/gray_700"
+                        tools:text="55" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/propertiesProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                app:cardCornerRadius="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_8sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_marginBottom="@dimen/_12sdp"
+                        android:text="@string/product_features"
+                        android:textColor="@color/gray_900"
+                        android:textSize="@dimen/_12sdp"
+                        app:drawableStartCompat="@drawable/ic_vertical_line" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/propertiesRv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/_16sdp"/>
+                    <FrameLayout
+                        android:id="@+id/frameProperty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?selectableItemBackground">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:layout_marginStart="@dimen/_4sdp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_marginBottom="@dimen/_12sdp"
+                            android:text="@string/technical_specifications"
+                            android:textColor="@color/gray_900"
+                            android:textSize="@dimen/_12sdp"
+                            app:drawableStartCompat="@drawable/ic_vertical_line" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_arrow"
+                            android:layout_margin="@dimen/_8sdp"
+                            android:layout_gravity="end|center_vertical"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_8sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="right"
+                        android:text="معرفی اجمالی"
+                        android:textColor="@color/gray_900"
+                        android:textSize="@dimen/_12sdp"
+                        app:drawableRightCompat="@drawable/ic_vertical_line" />
+
+                    <TextView
+                        android:id="@+id/txt_content_product"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:lineSpacingExtra="@dimen/_4sdp"
+                        android:padding="@dimen/_8sdp"
+                        android:textColor="@color/gray_700"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_alignParentRight="true"-->
+            <!--                    android:layout_centerVertical="true"-->
+            <!--                    android:layout_gravity="right"-->
+            <!--                    android:layout_marginTop="8dp"-->
+            <!--                    android:text="نقد و بررسی"-->
+            <!--                    android:textColor="@color/gray_900"-->
+            <!--                    android:textSize="14sp" />-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_alignParentRight="true"-->
+            <!--                    android:layout_centerVertical="true"-->
+            <!--                    android:layout_gravity="right"-->
+            <!--                    android:layout_marginTop="8dp"-->
+
+            <!--                    android:textColor="@color/gray_900"-->
+            <!--                    android:textSize="13sp" />-->
+
+            <!--                <include layout="@layout/layout_score" />-->
+
+            <!--                <View-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="8dp"-->
+            <!--                    android:layout_marginTop="4dp"-->
+            <!--                    android:background="@color/gray_200" />-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_8sdp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:background="@drawable/shape_radius_cat">
+
+                    <TextView
+                        android:id="@+id/txt_sub_cat_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginRight="@dimen/_16sdp"
+                        android:layout_marginBottom="@dimen/_8sdp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:background="@drawable/shape_radius_cat">
+
+
+                    <TextView
+                        android:id="@+id/txt_sub_cat_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginRight="@dimen/_16sdp"
+                        android:layout_marginBottom="@dimen/_8sdp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/commentProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_8sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_marginBottom="@dimen/_16sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="right"
+                            android:drawableRight="@drawable/ic_vertical_line"
+                            android:text=" نظرات کاربران"
+                            android:textColor="@color/gray_900"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:id="@+id/txt_count_comment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/blue"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:textSize="@dimen/_10sdp" />
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/commentRv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/_8sdp" />
+
+                    <TextView
+                        android:id="@+id/txt_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_8sdp"
+                        android:gravity="center"
+                        android:text="نظری برای این محصول ثبت نشده است"
+                        android:textColor="@color/gray_700"
+                        android:textSize="@dimen/_10sdp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="0dp">
+
+                <RelativeLayout
+                    android:id="@+id/mc_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:padding="@dimen/_16sdp">
+
+                    <ImageView
+                        android:id="@+id/img_chat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/ic_chat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_16sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_toEndOf="@+id/img_chat"
+                        android:text="دیدگاه خودرا درباره این کالا بنویسید"
+                        android:textColor="@color/gray_900"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <ImageView
+                        android:id="@+id/imgArrowComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_4sdp"
+                        android:padding="@dimen/_2sdp"
+                        app:srcCompat="@drawable/ic_arrow" />
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_8sdp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_marginBottom="@dimen/_16sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center_vertical"
+                            android:text=" محصولات مشابه"
+                            android:textColor="@color/gray_900"
+                            android:textSize="@dimen/_12sdp"
+                            app:drawableStartCompat="@drawable/ic_vertical_line" />
+
+                    </FrameLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/similarProductRv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_8sdp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/buy"
+        layout="@layout/layout_by_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
